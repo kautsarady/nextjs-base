@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "rm -rf ./build && next build",
     "start": "next start",
-    "analyze": "ANALYZE=true npm run build"
+    "analyze": "rm -rf ./build && ANALYZE=true npm run build"
   },
   "dependencies": {
     "@next/bundle-analyzer": "~9.5.3",
@@ -30,8 +30,6 @@
   },
   "devDependencies": {
     "babel-eslint": "~10.1.0",
-    "cssnano": "~4.1.10",
-    "cssnano-preset-advanced": "~4.0.7",
     "eslint": "~7.8.1",
     "eslint-config-airbnb": "~18.2.0",
     "eslint-import-resolver-alias": "~1.1.2",
@@ -39,9 +37,7 @@
     "eslint-plugin-import": "~2.22.0",
     "eslint-plugin-jsx-a11y": "~6.3.1",
     "eslint-plugin-react": "~7.20.6",
-    "eslint-plugin-react-hooks": "~4.1.0",
-    "postcss-flexbugs-fixes": "~4.2.1",
-    "postcss-preset-env": "~6.7.0"
+    "eslint-plugin-react-hooks": "~4.1.0"
   },
   "browserslist": [
     ">0.3%",
