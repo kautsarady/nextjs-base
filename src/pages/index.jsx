@@ -9,7 +9,8 @@ export default function Home() {
     <div>
       <h1>
         Hello
-        {JSON.stringify(data, null, 2)}
+        {' '}
+        {data && data.name}
       </h1>
     </div>
   );
