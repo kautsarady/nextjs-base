@@ -6,7 +6,11 @@ function CustomApp({ Component, pageProps }) {
 }
 
 CustomApp.propTypes = {
-  Component: PropTypes.element.isRequired,
+  Component: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.element,
+    PropTypes.instanceOf(Object),
+  ]).isRequired,
   pageProps: PropTypes.instanceOf(Object).isRequired,
 };
 
