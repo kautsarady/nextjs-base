@@ -1,0 +1,8 @@
+.hello {
+  // hello this is comment
+  display: flex;
+
+  &-world {
+    background-color: red;
+  }
+}
