@@ -9,9 +9,8 @@ const isDev = process.env.NODE_ENV !== 'production';
 const baseConfig = {
   distDir: isDev ? '.next' : 'build',
   poweredByHeader: false,
-  pageExtensions: ['jsx'],
+  pageExtensions: ['jsx', 'js'],
   webpack: webpackConfigModifier,
-  assetPrefix: process.env.ASSET_PREFIX,
   devIndicators: { autoPrerender: false },
 };
 
