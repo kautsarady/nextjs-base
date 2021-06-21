@@ -1,47 +1,28 @@
 {
-  "name": "nextjs-base",
+  "name": "bioka",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "analyze": "ANALYZE=true npm run build"
+    "lint": "next lint",
+    "stylelint": "stylelint '**/*.scss'"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "~9.5.3",
-    "axios": "~0.20.0",
-    "immutable": "~4.0.0-rc.12",
-    "lodash": "~4.17.20",
-    "moment": "~2.27.0",
-    "next": "9.5.3",
-    "next-compose-plugins": "~2.2.0",
-    "prop-types": "~15.7.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-immutable-proptypes": "~2.2.0",
-    "react-redux": "~7.2.1",
-    "redux": "~4.0.5",
-    "redux-actions": "~2.6.5",
-    "redux-devtools-extension": "~2.13.8",
-    "redux-immutable": "~4.0.0",
-    "redux-thunk": "~2.3.0",
-    "sass": "~1.26.10",
-    "swr": "~0.3.2"
+    "next": "11.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.35.1"
   },
   "devDependencies": {
-    "babel-eslint": "~10.1.0",
-    "eslint": "~7.8.1",
-    "eslint-config-airbnb": "~18.2.0",
-    "eslint-import-resolver-alias": "~1.1.2",
-    "eslint-import-resolver-webpack": "~0.12.2",
-    "eslint-plugin-import": "~2.22.0",
-    "eslint-plugin-jsx-a11y": "~6.3.1",
-    "eslint-plugin-react": "~7.20.6",
-    "eslint-plugin-react-hooks": "~4.1.0"
-  },
-  "browserslist": [
-    ">0.3%",
-    "not dead"
-  ]
+    "babel-eslint": "^10.1.0",
+    "eslint": "7.29.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "11.0.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0"
+  }
 }
