@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "stylelint": "stylelint '**/*.scss'"
+    "stylelint": "sh ./stylelint.sh"
   },
   "dependencies": {
     "next": "^11.1.0",
